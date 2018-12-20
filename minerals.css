@@ -1,0 +1,43 @@
+html body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: #f0ece2;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+nav, nav a {
+  background: #dfd3c3;
+  font-size: 1.25rem;
+  color: black;
+}
+
+a:hover {
+  color: #5c3c10;
+}
+
+.container-fluid {
+  margin: 60px 0 0 0;
+  padding: 0;
+}
+
+.jumbotron, .jumbotron h1 {
+  background: #c7b198;
+  font-size: 4.5rem;
+}
+
+section, div {
+  margin: 0;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+#reverse {
+  background: #dbd7cb;
+}

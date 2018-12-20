@@ -1,0 +1,42 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: #a7d7c5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav, nav a {
+  background: #f9f8eb;
+  font-size: 1.25rem;
+  color: #5c8d89;
+}
+
+.container-fluid {
+  margin: 65px 0 0 0;
+  padding: 0;
+}
+
+.jumbotron, .jumbotron h1 {
+  font-size: 4rem;
+  background: #74b49b;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+hr {
+  width: 75%;
+}
+

@@ -1,0 +1,50 @@
+html body {
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: #84a1be;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  margin-top: 65px;
+}
+
+.jumbotron, .jumbotron h1 {
+  background: #ece493;
+  font-size: 4.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  color: white;
+}
+
+a:hover{
+  color: #ece493;
+}
+
+nav {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  /*background-color: rgba(55, 67, 90)*/
+  background-color: #535962;
+}
+
+.hr {
+  border: 1px solid #5c7893;
+  margin-top: 0;
+}
+
+.info {
+  margin: 10px;
+}
+
+footer {
+  background-color: #535962;
+  position: absolute;
+}

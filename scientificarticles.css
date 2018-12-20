@@ -1,0 +1,20 @@
+.navbar-default {
+  background: #F2F3F4;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  padding-top: 70px;
+  background: #EC7063;
+}
+
+.jumbotron {
+  background: #E74C3C;
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+}
+
