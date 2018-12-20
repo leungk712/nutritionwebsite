@@ -1,13 +1,15 @@
-#mainNavbar {
+nav {
   background: #F2F3F4;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
-body {
+html body {
   font-family: 'Open Sans Condensed', sans-serif;
-  padding-top: 70px;
+  padding-top: 65px;
   background: #AF7AC5;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .container-fluid {
