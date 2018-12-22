@@ -11,8 +11,12 @@ html body {
 
 nav, nav a {
   background: #dfd3c3;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: black;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
 }
 
 a:hover {
