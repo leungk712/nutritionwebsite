@@ -6,10 +6,14 @@ body {
   text-align: center;
 }
 
-nav, nav a {
+nav, nav a, .navbar-brand {
   background: #f9f8eb;
   font-size: 1.5rem;
   color: #5c8d89;
+}
+
+a:hover {
+  color: black;
 }
 
 .container-fluid {
