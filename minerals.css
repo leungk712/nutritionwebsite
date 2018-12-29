@@ -2,44 +2,39 @@ html body {
   height: 100%;
   width: 100%;
   font-family: 'Open Sans Condensed', sans-serif;
-  background: #f0ece2;
+  background: #F0ECE2;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   text-align: center;
+  font-size: 1.25rem;
 }
 
-nav, nav a {
+nav, nav a, .navbar-brand {
   background: #dfd3c3;
   font-size: 1.5rem;
   color: black;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
 }
 
 a:hover {
   color: #5c3c10;
 }
 
-.container-fluid {
-  margin: 60px 0 0 0;
-  padding: 0;
+#bars {
+  color: black;
 }
 
-.jumbotron, .jumbotron h1 {
+.jumbotron, footer {
   background: #c7b198;
-  font-size: 4.5rem;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
 }
 
 section, div {
   margin: 0;
   border-radius: 2px;
-}
-
-p {
-  font-size: 1.25rem;
 }
 
 #reverse {
