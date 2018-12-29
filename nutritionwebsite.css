@@ -4,35 +4,32 @@ html body {
   background: #84a1be;
   margin: 0;
   padding: 0;
-}
-
-.container-fluid {
-  padding: 0;
-  margin-top: 65px;
-}
-
-.jumbotron, .jumbotron h1 {
-  background: #ece493;
-  font-size: 4.5rem;
-}
-
-p {
   font-size: 1.5rem;
+}
+
+.jumbotron {
+  background: #ece493;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
+nav, .navbar-brand, footer {
+  font-size: 1.5rem;
+  background: #535962;
+}
+
+#bars {
+  color: #ECE493;
 }
 
 a {
   color: white;
 }
 
-a:hover{
+a:hover {
   color: #ece493;
-}
-
-nav {
-  margin: 0 auto;
-  font-size: 1.5rem;
-  /*background-color: rgba(55, 67, 90)*/
-  background-color: #535962;
 }
 
 .hr {
@@ -42,9 +39,4 @@ nav {
 
 .info {
   margin: 10px;
-}
-
-footer {
-  background-color: #535962;
-  position: absolute;
 }
