@@ -1,11 +1,10 @@
 html body {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
-  padding-top: 70px;
   background: #EC7063;
   height: 100%;
   width: 100%;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 nav, nav a, .navbar-brand {
@@ -14,22 +13,20 @@ nav, nav a, .navbar-brand {
   color: black;
 }
 
+#bars {
+  color: #E74C3C;
+}
+
+.fa-carrot {
+  color: black;
+  font-size: 8rem;
+}
+
 a:hover {
   color: #E74C3C;
 }
 
-.container-fluid {
-  margin: 0;
-  padding: 0;
-}
-
 .jumbotron, .jumbotron h1 {
   background: #E74C3C;
-  text-align: center;
   font-size: 4.5rem;
 }
-
-p {
-  font-size: 25px;
-}
-
