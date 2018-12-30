@@ -1,10 +1,9 @@
 html body {
-  font-family: 'Open Sans Condensed', sans-serif;
-  padding-top: 70px;
-  background: #AF7AC5;
-  text-align: center;
   height: 100%;
   width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: #AF7AC5;
+  text-align: center;
 }
 
 nav, nav a, .navbar-brand {
@@ -17,14 +16,13 @@ a:hover {
   color: #AF7AC5;
 }
 
-.container-fluid {
-  margin: 0;
-  padding: 0;
+#bars {
+  color: white;
 }
 
 .jumbotron, .jumbotron h1 {
   background: #9B59B6;
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -33,6 +31,10 @@ h2 {
 
 p {
   font-size: 1.5rem;
+}
+
+footer {
+  background: #9B59B6;
 }
 
 
