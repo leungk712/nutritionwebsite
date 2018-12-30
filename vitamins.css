@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 nav, nav a, .navbar-brand {
@@ -16,9 +17,8 @@ a:hover {
   color: black;
 }
 
-.container-fluid {
-  margin: 65px 0 0 0;
-  padding: 0;
+#bars {
+  color: #74b49b;
 }
 
 .jumbotron, .jumbotron h1 {
@@ -36,11 +36,12 @@ h2 {
   font-size: 2rem;
 }
 
-p {
-  font-size: 1.25rem;
-}
-
 hr {
   width: 75%;
+  border: 1px solid #74b49b;
+}
+
+footer {
+  background: #f9f8eb;
 }
 
