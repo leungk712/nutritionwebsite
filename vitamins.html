@@ -14,10 +14,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="vitamins.css">
-    
-    <!-- JavaScript -->
-    <script src="vitamins.js"></script>
-    
+   
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
@@ -52,62 +49,156 @@
           </ul>
         </div>
       </nav>
-      
-      <div class="container-fluid my-0 px-0 pt-5">
-        <div class="jumbotron">
+  
+<div class="main-container container-fluid ">
+        <div class="jumbotron text-center">
           <h1>Vitamins</h1>
+          <p>Vitamins are so important in the body as they help us grow, help our cells to work normally, help our immune system and so much more!</p>
         </div>
-        
+      </div>
+      
+      <section class="container-fluid tabs-fs text-center">
         <h1><strong>Fat-Soluble Vitamins</strong></h1>
         <hr>
-        
-        <h2>Vitamin A</h2>
-            <p></p>
-        
-        <h2>Vitamin D</h2>
-            <p></p>
-        
-        <h2>Vitamin E</h2>
-            <p></p>
-        
-        <h2>Vitamin K</h2>
-            <p></p>
-        
-        <h1><strong>Water-Soluble Vitamins</strong></h1>
-        <hr>
-        
-        <h2>Vitamin B1 // Thiamine</h2>
-            <p></p>
-        
-        <h2>Vitamin B2 // Riboflavin</h2>
-            <p></p>
-        
-        <h2>Vitamin B3 // Niacin</h2>
-            <p></p>
-        
-        <h2>Vitamin B5 // Pantothenic Acid</h2>
-            <p></p>
-        
-        <h2>Vitamin B6 //</h2>
-            <p></p>
-        
-        <h2>Vitamin B7 // Biotin</h2>
-            <p>Biotin, a B vitamin, is an essential nutrient that is naturally present in some foods and available as a dietary supplement. This water-soluble vitamin is a cofactor for five carboxylases (propionyl-CoA carboxylase, pyruvate carboxylase, methylcrotonyl-CoA carboxylase [MCC], acetyl-CoA carboxylase 1, and acetyl-CoA carboxylase 2) that catalyze critical steps in the metabolism of fatty acids, glucose, and amino acids. Biotin also plays key roles in histone modifications, gene regulation (by modifying the activity of transcription factors), and cell signaling</p>
-        
-        <h2>Vitamin B9 // Folic Acid</h2>
-            <p>Folate is a water-soluble B vitamin that is naturally present in some foods, added to others, and available as a dietary supplement. Folate, formerly known as folacin, is the generic term for both naturally occurring food folate and folic acid, the fully oxidized monoglutamate form of the vitamin that is used in dietary supplements and fortified foods.</p>
+        <div class="tabs-container">
+          <div id="tab-1" class="tab-item tab-border">
+            <p>Vitamin A</p>
+          </div>
+          <div id="tab-2" class="tab-item">
+            <p>Vitamin D</p>
+          </div>
+          <div id="tab-3" class="tab-item">
+            <p>Vitamin E</p>
+          </div>
+          <div id="tab-4" class="tab-item">
+            <p>Vitamin K</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="fat-soluble-content">
+        <div id="fat-soluble-vitamins" class="container">
+          <div id="tab-1-content" class="tab-content-item show">
+            <h2>Vitamin A</h2>
+            <p class="fs-text">Vitamin A helps keep our teeth, bones, eyes, and skin healthy. Vitamin A helps with reproduction, helps keep cells working normally, and helps with growth!
+            </p>
+            <h4>How much Vitamin A each day?</h4>
+            <table class="vit-a-table table text-center">
+              <tr>
+                <th colspan="5">Sources of Vitamin A</th>
+              </tr>
+              <tr>
+                <td>Carrots (raw)</td>
+                <td>Cantaloupe</td>
+                <td>Mango</td>
+                <td>Dried Apricots</td>
+                <td>Summer Squash</td>
+              </tr>
+              <tr>
+                <td>Spinach</td>
+                <td>Broccoli</td>
+                <td>Bell peppers (red, orange)</td>
+                <td>Kale</td>
+                <td>Sweet Potatoes</td>
+              </tr>
+              <tr>
+                <td>Pumpkin Pie</td>
+                <td>Eggs</td>
+                <td>Black Eyed Peas</td>
+                <td>Beef Liver</td>
+                <td>Spinach</td>
+              </tr>
+              <tr>
+                <td>Ready-to-eat cereal (fortified with Vitamin A)</td>
+                <td>Tomatoes</td>
+                <td>Collard Greens</td>
+                <td>Turnip Greens</td>
+                <td>Romaine Lettuce</td>
+              </tr>
+            </table>
+          </div>
             
-            <p>Folate functions as a coenzyme or cosubstrate in single-carbon transfers in the synthesis of nucleic acids (DNA and RNA) and metabolism of amino acids. One of the most important folate-dependent reactions is the conversion of homocysteine to methionine in the synthesis of S-adenosyl-methionine, an important methyl donor.</p>
-        
-        <h2>Vitamin B12 // Cobalamin</h2>
-            <p>Vitamin B12 is a water-soluble vitamin that is naturally present in some foods, added to others, and available as a dietary supplement and a prescription medication. Vitamin B12 exists in several forms and contains the mineral cobalt [1-4], so compounds with vitamin B12 activity are collectively called “cobalamins”.</p>
-            <p>Vitamin B12 is required for proper red blood cell formation, neurological function, and DNA synthesis</p>
-       </div>
-       
-      <footer class="container-fluid m-0 p-4">
+          <div id="tab-2-content" class="tab-content-item">
+            <h2>Vitamin D</h2>
+            <p class="fs-text">Vitamin D helps our body absorb calcium, an important mineral needed to keep our bones and teeth healthy. Vitamin D also helps with the immune system and can reduce inflammation. Vitamin D is not found in much foods, but can be added (fortified) in certain foods. The sun is the biggest way of getting Vitamin D! Get outside and soak up some sun!</p>
+            <table class="vit-d-table table text-center">
+              <tr>
+                <th colspan="5">Sources of Vitamin D</th>
+              </tr>
+              <tr>
+                <td>Salmon</td>
+                <td>Tuna</td>
+                <td>Cod Liver Oil</td>
+                <td>Oysters</td>
+                <td>Shrimp</td>
+              </tr>
+              <tr>
+                <td>Eggs</td>
+                <td>Milk (fortified with Vitamin D)</td>
+                <td>Orange Juice (fortified with Vitamin D)</td>
+                <td>Ready-to-eat cereals (fortified with Vitamin D)</td>
+                <td>Beef Liver</td>
+              </tr>
+            </table>
+          </div>
+            
+          <div id="tab-3-content" class="tab-content-item">
+            <h2>Vitamin E</h2>
+            <p class="fs-text">Vitamin E is known as an important antioxidant in the body. Antioxidants help protect our body from free radicals which can damage and break down cells. Antioxidants can help protect us from diseases such as heart disease, cancer and other diseases.</p>
+            
+            <table class="vit-e-table table text-center">
+              <tr>
+                <th colspan="5">Sources of Vitamin E</th>
+              </tr>
+              <tr>
+                <td>Sunflower seeds</td>
+                <td>Almonds</td>
+                <td>Hazelnuts</td>
+                <td>Pine Nuts</td>
+                <td>Peanuts</td>
+              </tr>
+              <tr>
+                <td>Atlantic Salmon</td>
+                <td>Avocado</td>
+                <td>Rainbow Trout</td>
+                <td>Spinach</td>
+                <td>Butternut Squash</td>
+              </tr>
+            </table>
+          </div>
+            
+          <div id="tab-4-content" class="tab-content-item">
+            <h2>Vitamin K</h2>
+            <p class="fs-text">Vitamin K is an important vitamin that helps our blood clot as well as keep our bones strong and reduce our risk for health disease.</p>
+            <p>*If you are taking anti-coagulation medication (ex. Warfarin (Coumadin)), if you have not already, be sure to speak with your doctor on how much Vitamin K you should be eating each day!</p>
+            <table class="vit-k-table table text-center">
+              <tr>
+                <th colspan="5">Sources of Vitamin K</th>
+              </tr>
+              <tr>
+                <td>Kale</td>
+                <td>Mustard Greens</td>
+                <td>Swiss Chard</td>
+                <td>Collard Greens</td>
+                <td>Broccoli</td>
+              </tr>
+              <tr>
+                <td>Brussel Sprouts</td>
+                <td>Beef Liver</td>
+                <td>Pork Chops</td>
+                <td>Chicken</td>
+                <td>Parsley</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="container-fluid text-center">
         <p>Copyright Kevohhh &copy; 2018, LLC</p>
       </footer>
     
+      <script src="vitamins.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
