@@ -3,8 +3,7 @@ body {
   background: #a7d7c5;
   margin: 0;
   padding: 0;
-  text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 nav, nav a, .navbar-brand {
@@ -15,15 +14,28 @@ nav, nav a, .navbar-brand {
 
 a:hover {
   color: black;
+  background: #a7d7c5;
 }
 
 #bars {
   color: #74b49b;
 }
 
-.jumbotron, .jumbotron h1 {
-  font-size: 4rem;
+.main-container {
+  padding: 3.5rem 0 0;
+  margin: 0;
+  padding
+}
+
+.jumbotron {
   background: #74b49b;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
+.text-center {
   text-align: center;
 }
 
@@ -34,14 +46,68 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-weight: 700;
 }
 
 hr {
-  width: 75%;
+  width: 100%;
   border: 1px solid #74b49b;
 }
 
 footer {
   background: #f9f8eb;
+  margin: 0;
+  padding: 1.5rem;
 }
 
+/* Tabs Fat Soluble */
+
+.tabs-fs .tabs-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs-fs .tabs-container div p {
+  font-size: 2rem;
+}
+
+.tabs-fs .tabs-container div {
+  padding: 0;
+}
+
+.tabs-fs .tabs-container div:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.tab-border {
+  border-bottom: #fff 4px solid;
+}
+
+#tab-1-content, #tab-2-content, #tab-3-content, #tab-4-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.fat-soluble-content {
+  padding: 1.25rem 0;
+}
+
+/* Table */
+
+.table tr td {
+  border: 1px solid black;
+  padding: 0 1.25rem;
+  font-size: 1.25rem;
+}
+
+.table th {
+  font-size: 2.5rem;
+  border-top: none;
+}
