@@ -1,35 +1,50 @@
-html body {
-  text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  background: #84a1be;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+html body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: #F5F5F5;
   font-size: 1.5rem;
 }
 
 .jumbotron {
-  background: #ece493;
+  background: url('https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
+  height: 50vh;
+  text-align: center;
+  color: var(--color-white);
 }
 
 .jumbotron h1 {
   font-size: 4rem;
 }
 
-nav, .navbar-brand, footer {
-  font-size: 1.5rem;
-  background: #535962;
+.jumbotron p {
+  font-size: 2rem;
 }
 
-#bars {
-  color: #ECE493;
+nav, .navbar-brand, footer {
+  font-size: 1.5rem;
+  background: #bb8fa9;
+}
+
+#hamburger-icon {
+  color: var(--color-black);
 }
 
 a {
-  color: white;
+  color: var(--color-black);
 }
 
 a:hover {
-  color: #ece493;
+  color: #8d309b;
 }
 
 .hr {
@@ -37,6 +52,7 @@ a:hover {
   margin-top: 0;
 }
 
-.info {
-  margin: 10px;
+footer {
+  text-align: center;
+  color: var(--color-black);
 }
