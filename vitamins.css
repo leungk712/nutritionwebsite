@@ -69,7 +69,7 @@ hr {
 }
 
 footer {
-  background: var(--light-green);
+  background-color: var(--light-green);
   padding: 1.5rem;
 }
 
@@ -124,10 +124,6 @@ footer {
 .table th {
   font-size: 2.5rem;
   border-top: none;
-}
-
-.block {
-  height: 50px;
 }
 
 /* Water Soluble Vitamins */
