@@ -1,39 +1,52 @@
-body {
-  font-family: 'Open Sans Condensed', sans-serif;
-  background: #a7d7c5;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-green: #a7d7c5;
+  --tan-color: #f9f8eb;
+  --black-color: #000;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: var(--tan-color);
   font-size: 1.5rem;
 }
 
 nav, nav a, .navbar-brand {
-  background: #f9f8eb;
+  background-color: var(--light-green);
   font-size: 1.5rem;
-  color: #5c8d89;
+  color: var(--black-color);
 }
 
 a:hover {
-  color: black;
-  background: #a7d7c5;
+  color: var(--tan-color);
 }
 
-#bars {
-  color: #74b49b;
+#hamburger-icon {
+  color: var(--black-color);
 }
 
 .main-container {
   padding: 3.5rem 0 0;
-  margin: 0;
-  padding
 }
 
 .jumbotron {
-  background: #74b49b;
+  height: 40vh;
+  color: black;
+  background: url('https://images.unsplash.com/photo-1523472721958-978152f4d69b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
+  opacity: 0.8;
 }
 
 .jumbotron h1 {
   font-size: 4rem;
 }
+
+.jumbotron p {
+  font-size: 1.75rem;
 
 .text-center {
   text-align: center;
@@ -50,13 +63,13 @@ h2 {
 }
 
 hr {
-  width: 100%;
+  width: 40%;
   border: 1px solid #74b49b;
+  margin: 0 auto;
 }
 
 footer {
-  background: #f9f8eb;
-  margin: 0;
+  background: var(--light-green);
   padding: 1.5rem;
 }
 
@@ -79,12 +92,12 @@ footer {
 }
 
 .tabs-fs .tabs-container div:hover {
-  color: white;
+  color: var(--light-green);
   cursor: pointer;
 }
 
 .tab-border {
-  border-bottom: #fff 4px solid;
+  border-bottom: var(--black-color) 4px solid;
 }
 
 #tab-1-content, #tab-2-content, #tab-3-content, #tab-4-content {
@@ -102,12 +115,47 @@ footer {
 /* Table */
 
 .table tr td {
-  border: 1px solid black;
+  border: 1px solid var(--black-color);
   padding: 0 1.25rem;
   font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .table th {
   font-size: 2.5rem;
   border-top: none;
+}
+
+.block {
+  height: 50px;
+}
+
+/* Water Soluble Vitamins */
+
+div#water-soluble-vitamins {
+  margin: 20px 0;
+}
+
+.water-soluble-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+
+.water-soluble-title {
+  padding: 0 0.5rem;
+}
+
+.water-soluble-content {
+  overflow: hidden;
+  padding: 0 0.5rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .water-soluble-column {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
 }
