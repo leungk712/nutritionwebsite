@@ -35,8 +35,8 @@ a:hover {
 }
 
 .jumbotron {
-  height: 40vh;
-  color: black;
+  height: 50vh;
+  color: var(--black-color);
   background: url('https://images.unsplash.com/photo-1523472721958-978152f4d69b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
   opacity: 0.8;
 }
@@ -49,9 +49,9 @@ a:hover {
   font-size: 1.75rem;
 }
 
-.text-center {
-  text-align: center;
-}
+/* =============
+  Typography
+================*/
 
 h1 {
   font-size: 2.5rem;
@@ -69,12 +69,18 @@ hr {
   margin: 0 auto;
 }
 
-footer {
-  background-color: var(--light-green);
-  padding: 1.5rem;
+.text-center {
+  text-align: center;
 }
 
-/* Tabs Fat Soluble */
+.svg-img {
+  height: 35px;
+  width: 35px;
+}
+
+/* =============
+  Tabs Fat Soluble
+================*/
 
 .tabs-fs .tabs-container {
   display: grid;
@@ -113,7 +119,9 @@ footer {
   padding: 1.25rem 0;
 }
 
-/* Table */
+/* =============
+  Table
+================*/
 
 .table tr td {
   border: 1px solid var(--black-color);
@@ -127,7 +135,9 @@ footer {
   border-top: none;
 }
 
-/* Water Soluble Vitamins */
+/* =============
+  Water Soluble Vitamins
+================*/
 
 div#water-soluble-vitamins {
   margin: 20px 0;
@@ -148,7 +158,31 @@ div#water-soluble-vitamins {
   padding: 0 0.5rem;
 }
 
-/* Media Queries */
+/* =============
+  Footer & Flaticon Div
+================*/
+
+.flaticon-div {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+footer {
+  margin-top: 20px;
+  height: 8vh;
+  text-align: center;
+  background-color: var(--light-green);
+}
+
+footer p {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+}
+
+/* =============
+  Media Queries
+================*/
 
 @media (max-width: 768px) {
   .jumbotron h1 {
