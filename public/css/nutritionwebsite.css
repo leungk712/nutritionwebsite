@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 :root {
@@ -9,9 +10,10 @@
   --color-black: #000;
 }
 
-html body {
-  font-family: 'Open Sans Condensed', sans-serif;
-  background: #F5F5F5;
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #F5F5F5;
   font-size: 1.5rem;
 }
 
@@ -53,6 +55,14 @@ a:hover {
 }
 
 footer {
-  text-align: center;
   color: var(--color-black);
+  text-align: center;
+  height: 8vh;
+  margin-top: 20px;
+}
+
+footer p {
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
 }

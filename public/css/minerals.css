@@ -2,21 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
-html body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Open Sans Condensed', sans-serif;
+:root {
+  --color-black: #000;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
   background: #F0ECE2;
-  overflow-x: hidden;
   font-size: 1.25rem;
 }
 
 nav, nav a, .navbar-brand {
   background: #dfd3c3;
   font-size: 1.5rem;
-  color: black;
+  color: var(--color-black);
 }
 
 a:hover {
@@ -24,7 +27,7 @@ a:hover {
 }
 
 #hamburger-icon {
-  color: black;
+  color: var(--color-black);
 }
 
 .overview {
@@ -40,17 +43,32 @@ a:hover {
 
 .jumbotron h1 {
   font-size: 4rem;
-  color: #000;
+  color: var(--color-black);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.mineral-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
 .mineral-container {
   position: relative;
   width: 400px;
   height: 350px;
+  margin: 0;
+  padding: 0;
 }
 
 .mineral-card {
@@ -58,6 +76,8 @@ a:hover {
   height: 100%;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
+  margin: 0;
+  padding: 0;
 }
 
 .mineral-card h1 {
@@ -104,4 +124,23 @@ footer {
 
 footer p {
   padding-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
+
+@media (max-width: 1200px) {
+  .mineral-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mineral-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    justify-content: center;
+    align-items: center;
+  }
