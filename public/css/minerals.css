@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 :root {
@@ -12,11 +12,13 @@
 body {
   min-height: 100vh;
   min-width: 100%;
-  background: #F0ECE2;
+  background-color: #f0ece2;
   font-size: 1.25rem;
 }
 
-nav, nav a, .navbar-brand {
+nav,
+nav a,
+.navbar-brand {
   background: #dfd3c3;
   font-size: 1.5rem;
   color: var(--color-black);
@@ -37,7 +39,8 @@ a:hover {
 
 .jumbotron {
   height: 50vh;
-  background: url('https://images.unsplash.com/photo-1542990253-a781e04c0082?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=984&q=80') no-repeat center/cover;
+  background: url("https://images.unsplash.com/photo-1542990253-a781e04c0082?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=984&q=80")
+    no-repeat center/cover;
   position: relative;
 }
 
@@ -107,7 +110,7 @@ a:hover {
   backface-visiblity: hidden;
   background: #dbd7cb;
   transform: rotateY(180deg);
-  padding: 1.5rem 1rem;  
+  padding: 1.5rem 1rem;
   text-align: center;
 }
 
@@ -144,3 +147,4 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+}
