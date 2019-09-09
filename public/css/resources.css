@@ -12,17 +12,17 @@ body {
 }
 
 nav, nav a, .navbar-brand {
-  background-color: ;
+  background-color: pink;
   font-size: 1.5rem;
-  color: ;
+  color: #000;
 }
 
 a:hover {
-  color: ;
+  color: #000;
 }
 
 #bars {
-  color: ;
+  color: #000;
 }
 
 .jumbotron {
