@@ -22,6 +22,7 @@ body {
   height: 50vh;
   text-align: center;
   color: var(--color-white);
+  margin-bottom: 0;
 }
 
 .jumbotron h1 {
@@ -30,6 +31,22 @@ body {
 
 .jumbotron p {
   font-size: 2rem;
+}
+
+.nutrition-facts {
+  height: 8vh;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.nutrition-facts-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav, .navbar-brand, footer {
