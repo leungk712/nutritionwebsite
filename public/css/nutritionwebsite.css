@@ -8,6 +8,7 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --color-bouquet: #BB8FA9;
 }
 
 body {
@@ -35,12 +36,12 @@ body {
 
 .nutrition-facts {
   height: 8vh;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
+  background-color: rgba(177, 143, 166, 0.7);
   display: grid;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .nutrition-facts-content {
@@ -51,7 +52,7 @@ body {
 
 nav, .navbar-brand, footer {
   font-size: 1.5rem;
-  background: #bb8fa9;
+  background: var(--color-bouquet);;
 }
 
 #hamburger-icon {
