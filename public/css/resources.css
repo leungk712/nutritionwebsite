@@ -6,6 +6,9 @@
 
 :root {
   --color-lemon-chiffon: #ffffc5;
+  --color-chalky: #f0dd92;
+  --color-ecru-white: #f2eee0;
+  --color-white: #fff;
   --color-black: #000;
 }
 
@@ -14,6 +17,7 @@ body {
     width: 100%;
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: var(--color-lemon-chiffon);
+    font-size: 1.25rem;
 }
 
 .container {
@@ -27,16 +31,12 @@ body {
 }
 
 nav {
-  background-color: var(--color-lemon-chiffon);;
+  background-color: var(--color-ecru-white);
 }
 
-.navbar-brand, .nav-link, a:hover {
+.navbar-brand, .nav-link, a:hover, #bars {
   color: var(--color-black);
   font-size: 1.5rem;
-}
-
-#bars {
-  color: var(--color-black);
 }
 
 .jumbotron {
@@ -49,31 +49,49 @@ nav {
   
   .jumbotron h1 {
     font-size: 4rem;
-    color: #fff;
+    color: var(--color-white);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
+  .resources {
+    margin-bottom: 50px;
+  }
+
+  .resource-container:hover {
+    transform: translateX(2%);
+    transition: all 0.7s ease-in-out;
+  }
+
   .resource-container h2 {
     font-weight: bold;
   }
 
-  .resource-link {
+  a.resource-link {
     padding: 0.5rem 2rem;
     border: 2px solid var(--color-black);
-    border-radius: 50px;
+    border-radius: 5px;
     font-weight: bold;
     color: #333;
-  }
-
-  .resource-link:hover {
+    text-decoration: none;
     font-size: 1.1rem;
   }
 
+  hr {
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    padding: 0.5rem;
+  }
+
+  a.resource-link:hover {
+    background-color: var(--color-ecru-white);
+    transition: 0.4s ease;
+  }
+
   footer {
-    background: var(--color-dark-purple);
+    background: var(--color-ecru-white);
     text-align: center;
     height: 8vh;
     margin-top: 20px;
@@ -81,6 +99,5 @@ nav {
   
   footer p {
     padding-top: 1rem;
-    font-size: 1.25rem;
     font-weight: bold;
   }
