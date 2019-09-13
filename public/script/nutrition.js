@@ -8,6 +8,8 @@ const nutritionFactArray = [
     'Weight loss goes beyond just calories in and calories out. There are biochemical and psychological factors as well.',
     '1 cup of chickpeas (garbanzo beans) contains about 14 grams of protein and 12 grams of fiber!',
     'Antioxidants can be found in Vitamin C and Vitamin E foods.',
+    'Certain foods such as fried fast food, cakes, cookies, pies can still have trans fats!',
+    'Omega-3 fatty acid sources: salmon, mackerel, cod, oysters, tuna, flaxseed, seaweed, walnuts, edamame',
 ]
 
 /* Random generator from facts array */
