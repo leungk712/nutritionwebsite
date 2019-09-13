@@ -5,32 +5,42 @@
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+:root {
+  --color-horses-neck: #5c3c10; /* anchor tag hover */
+  --color-white-rock: #f0ece2; /* body color */
+  --color-moon-mist: #dbd7cb; /* mineral card back */
+  --color-wafer: #dfd3c3; /* navbar, mineral card front, footer */
+  --color-sandal: #a3816a; /* reverse mineral cards */
+  --color-black: #000; /* text-color */
+  --align-center: center;
+}
+
 body {
   min-height: 100vh;
   min-width: 100%;
-  background-color: #f0ece2;
+  background-color: var(--color-white-rock);
   font-size: 1.25rem;
 }
 
 nav,
 nav a,
 .navbar-brand {
-  background: #dfd3c3;
+  background: var(--color-wafer);
   font-size: 1.5rem;
-  color: #000;
+  color: var(--color-black);
 }
 
 a:hover {
-  color: #5c3c10;
+  color: var(--color-horses-neck);
 }
 
 #hamburger-icon {
-  color: #000;
+  color: var(--color-black);
 }
 
 .overview {
-  padding-left: 4rem;
   margin: 0 auto;
+  width: 80%;
 }
 
 .jumbotron {
@@ -41,7 +51,7 @@ a:hover {
 
 .jumbotron h1 {
   font-size: 4rem;
-  color: #000;
+  color: var(--color-black);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -57,8 +67,8 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0px;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--align-center);
+  align-items: var(--align-center);
 }
 
 .mineral-container {
@@ -83,39 +93,38 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: var(--align-center);
 }
 
 .mineral-card:hover {
   transform: rotateY(180deg);
 }
 
-.mineral-card-front {
+.mineral-card-front, .mineral-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visiblity: hidden;
-  background: #dfd3c3;
+}
+
+.mineral-card-front {
+  background: var(--color-wafer);
 }
 
 .mineral-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visiblity: hidden;
-  background: #dbd7cb;
+  background: var(--color-moon-mist);
   transform: rotateY(180deg);
   padding: 1.5rem 1rem;
-  text-align: center;
+  text-align: var(--align-center);
 }
 
 .reverse {
-  background: #a3816a;
+  background: var(--color-sandal);
 }
 
 footer {
-  background: #c7b198;
-  text-align: center;
+  background-color: var(--color-wafer);
+  text-align: var(--align-center);
   height: 8vh;
   margin-top: 20px;
 }
@@ -130,8 +139,8 @@ footer p {
   .mineral-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
-    justify-content: center;
-    align-items: center;
+    justify-content: var(--align-center);
+    align-items: var(--align-center);
   }
 }
 
@@ -139,7 +148,7 @@ footer p {
   .mineral-grid {
     grid-template-columns: 1fr;
     grid-gap: 0px;
-    justify-content: center;
-    align-items: center;
+    justify-content: var(--align-center);
+    align-items: var(--align-center);
   }
 }
