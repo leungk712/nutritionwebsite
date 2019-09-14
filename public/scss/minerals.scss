@@ -1,0 +1,135 @@
+@import './resets';
+@import './mixins';
+  
+  :root {
+    --color-horses-neck: #5c3c10; /* anchor tag hover */
+    --color-white-rock: #f0ece2; /* body color */
+    --color-moon-mist: #dbd7cb; /* mineral card back */
+    --color-wafer: #dfd3c3; /* navbar, mineral card front, footer */
+    --color-sandal: #a3816a; /* reverse mineral cards */
+    --color-black: #000; /* text-color */
+    --align-center: center;
+  }
+  
+  body {
+    @include body;
+    background-color: var(--color-white-rock);
+    font-size: 1.25rem;
+  }
+  
+  nav,
+  nav a,
+  .navbar-brand {
+    background: var(--color-wafer);
+    font-size: 1.5rem;
+    color: var(--color-black);
+  }
+  
+  a:hover {
+    color: var(--color-horses-neck);
+  }
+  
+  #hamburger-icon {
+    color: var(--color-black);
+  }
+  
+  .overview {
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .jumbotron {
+    height: 50vh;
+    background: url("https://images.unsplash.com/photo-1542990253-a781e04c0082?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=984&q=80") no-repeat center/cover;
+    position: relative;
+  }
+  
+  .jumbotron h1 {
+    font-size: 4rem;
+    color: var(--color-black);
+    @include absoluteCenter;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 70%;
+  }
+  
+  .mineral-grid {
+    @include grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+  }
+  
+  .mineral-container {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mineral-card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mineral-card h1 {
+    @include absoluteCenter;
+    text-align: var(--align-center);
+  }
+  
+  .mineral-card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .mineral-card-front, .mineral-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visiblity: hidden;
+  }
+  
+  .mineral-card-front {
+    background: var(--color-wafer);
+  }
+  
+  .mineral-card-back {
+    background: var(--color-moon-mist);
+    transform: rotateY(180deg);
+    padding: 1.5rem 1rem;
+    text-align: var(--align-center);
+  }
+  
+  .reverse {
+    background: var(--color-sandal);
+  }
+  
+  footer {
+    @include footer;
+    background-color: var(--color-wafer);
+  }
+  
+  footer p {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 1200px) {
+    .mineral-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mineral-grid {
+      grid-template-columns: 1fr;
+      grid-gap: 0px;
+    }
+  }

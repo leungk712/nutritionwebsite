@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans Condensed', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 :root {
@@ -39,7 +41,7 @@ a:hover {
 .jumbotron {
   height: 50vh;
   color: var(--black-color);
-  background: url('https://images.unsplash.com/photo-1523472721958-978152f4d69b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
+  background: url("https://images.unsplash.com/photo-1523472721958-978152f4d69b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
   opacity: 0.8;
 }
 
@@ -52,9 +54,8 @@ a:hover {
 }
 
 /* =============
-  Typography
-================*/
-
+    Typography
+  ================*/
 h1 {
   font-size: 2.5rem;
   font-weight: 400;
@@ -81,15 +82,20 @@ hr {
 }
 
 /* =============
-  Tabs Fat Soluble
-================*/
-
+    Tabs Fat Soluble
+  ================*/
 .tabs-fs .tabs-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-  align-items: center;
-  justify-content: center;
 }
 
 .tabs-fs .tabs-container div p {
@@ -122,9 +128,8 @@ hr {
 }
 
 /* =============
-  Table
-================*/
-
+    Table
+  ================*/
 .table tr td {
   border: 1px solid var(--black-color);
   padding: 0 1.25rem;
@@ -138,16 +143,17 @@ hr {
 }
 
 /* =============
-  Water Soluble Vitamins
-================*/
-
+    Water Soluble Vitamins
+  ================*/
 div#water-soluble-vitamins {
   margin: 20px 0;
 }
 
 .water-soluble-column {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
 }
 
@@ -161,9 +167,8 @@ div#water-soluble-vitamins {
 }
 
 /* =============
-  Footer & Flaticon Div
-================*/
-
+    Footer & Flaticon Div
+  ================*/
 .flaticon-div {
   margin: 0 auto;
   text-align: center;
@@ -171,9 +176,9 @@ div#water-soluble-vitamins {
 }
 
 footer {
-  margin-top: 20px;
-  height: 8vh;
   text-align: center;
+  height: 8vh;
+  margin-top: 20px;
   background-color: var(--light-green);
 }
 
@@ -184,25 +189,24 @@ footer p {
 }
 
 /* =============
-  Media Queries
-================*/
-
+    Media Queries
+  ================*/
 @media (max-width: 768px) {
   .jumbotron h1 {
     padding-top: 3rem;
     font-size: 2.5rem;
   }
-  
   .jumbotron p {
     font-size: 1.25rem;
   }
-  
   .tabs-fs .tabs-container div p {
     font-size: 1.5rem;
   }
-  
   .water-soluble-column {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(1, 100%);
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
   }
 }
+/*# sourceMappingURL=vitamins.css.map */

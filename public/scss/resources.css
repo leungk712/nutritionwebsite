@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+:root {
+  --color-lemon-chiffon: #ffffc5;
+  --color-chalky: #f0dd92;
+  --color-ecru-white: #f2eee0;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-lemon-chiffon);
+  font-size: 1.25rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: var(--color-ecru-white);
+}
+
+.navbar-brand, .nav-link, a:hover, #bars {
+  color: var(--color-black);
+  font-size: 1.5rem;
+}
+
+.jumbotron {
+  height: 50vh;
+  background: url("https://images.unsplash.com/photo-1544070078-a212eda27b49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80") no-repeat center/cover;
+  /* Picture by Duy Pham - Unsplash*/
+  position: relative;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+  color: var(--color-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.resources {
+  margin-bottom: 50px;
+}
+
+.resource-container:hover {
+  -webkit-transform: translateX(2%);
+          transform: translateX(2%);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.resource-container h2 {
+  font-weight: bold;
+}
+
+a.resource-link {
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--color-black);
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--color-black);
+  padding: 0.5rem;
+}
+
+a.resource-link:hover {
+  background-color: var(--color-ecru-white);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+footer {
+  text-align: center;
+  height: 8vh;
+  margin-top: 20px;
+  background: var(--color-ecru-white);
+}
+
+footer p {
+  padding-top: 1rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=resources.css.map */

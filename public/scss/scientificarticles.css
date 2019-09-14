@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans Condensed', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 :root {
@@ -13,9 +15,9 @@
 }
 
 body {
-  background-color: var(--color-burnt-sienna);
   min-height: 100vh;
   width: 100%;
+  background-color: var(--color-burnt-sienna);
   font-size: 1.5rem;
 }
 
@@ -42,19 +44,22 @@ nav, nav a, .navbar-brand {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .article-container:hover {
-  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
 footer {
+  text-align: center;
   height: 8vh;
   margin-top: 20px;
   background-color: var(--color-your-pink);
-  text-align: center;
 }
 
 footer p {
@@ -62,3 +67,4 @@ footer p {
   font-size: 1.25rem;
   font-weight: bold;
 }
+/*# sourceMappingURL=scientificarticles.css.map */

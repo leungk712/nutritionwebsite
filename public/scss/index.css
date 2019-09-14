@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-bouquet: #BB8FA9;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #F5F5F5;
+  font-size: 1.5rem;
+}
+
+.jumbotron {
+  background: url("https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
+  height: 50vh;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
+.jumbotron p {
+  font-size: 2rem;
+}
+
+.nutrition-facts {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  background-color: rgba(177, 143, 166, 0.7);
+  font-size: 1.2rem;
+}
+
+.nutrition-facts-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav, .navbar-brand, footer {
+  font-size: 1.5rem;
+  background: var(--color-bouquet);
+}
+
+#hamburger-icon {
+  color: var(--color-black);
+}
+
+a {
+  color: var(--color-black);
+}
+
+a:hover {
+  color: #8d309b;
+}
+
+.hr {
+  border: 1px solid #5c7893;
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  height: 8vh;
+  margin-top: 20px;
+  color: var(--color-black);
+}
+
+footer p {
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=index.css.map */
