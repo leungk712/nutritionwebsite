@@ -39,13 +39,13 @@ nav, nav a, .navbar-brand {
 }
 
 .jumbotron h1 {
-  font-size: 4rem;
-  color: var(--color-white);
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: var(--color-white);
 }
 
 .article-container:hover {
@@ -56,10 +56,10 @@ nav, nav a, .navbar-brand {
 }
 
 footer {
-  text-align: center;
   height: 8vh;
   margin-top: 20px;
   background-color: var(--color-your-pink);
+  text-align: center;
 }
 
 footer p {
