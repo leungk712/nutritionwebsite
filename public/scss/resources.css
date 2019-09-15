@@ -7,6 +7,10 @@
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
 :root {
   --color-lemon-chiffon: #ffffc5;
   --color-chalky: #f0dd92;
@@ -49,7 +53,6 @@ nav {
 }
 
 .jumbotron h1 {
-  font-size: 4rem;
   color: var(--color-white);
   position: absolute;
   top: 50%;

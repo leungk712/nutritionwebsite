@@ -7,6 +7,10 @@
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
 :root {
   --color-burnt-sienna: #EC7063;
   --color-your-pink: #ffc0c2;
@@ -44,7 +48,6 @@ nav, nav a, .navbar-brand {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 4rem;
   color: var(--color-white);
 }
 
@@ -56,10 +59,10 @@ nav, nav a, .navbar-brand {
 }
 
 footer {
+  text-align: center;
   height: 8vh;
   margin-top: 20px;
   background-color: var(--color-your-pink);
-  text-align: center;
 }
 
 footer p {

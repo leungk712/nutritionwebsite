@@ -1,5 +1,6 @@
 @import './resets';
 @import './mixins';
+@import './variables';
 
 :root {
   --color-lemon-chiffon: #ffffc5;
@@ -42,7 +43,6 @@ nav {
   }
   
   .jumbotron h1 {
-    font-size: 4rem;
     color: var(--color-white);
     @include absoluteCenter;
   }

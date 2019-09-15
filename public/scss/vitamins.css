@@ -7,6 +7,10 @@
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
 :root {
   --light-green: #a7d7c5;
   --tan-color: #f9f8eb;
@@ -203,8 +207,6 @@ footer p {
     font-size: 1.5rem;
   }
   .water-soluble-column {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (100%)[1];
         grid-template-columns: repeat(1, 100%);
   }

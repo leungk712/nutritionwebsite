@@ -1,5 +1,6 @@
 @import './resets';
 @import './mixins';
+@import './variables';
 
   :root {
     --color-burnt-sienna: #EC7063;
@@ -33,7 +34,6 @@
   
   .jumbotron h1 {
     @include absoluteCenter;
-    font-size: 4rem;
     color: var(--color-white);
   }
   
@@ -43,10 +43,8 @@
   }
   
   footer {
-    height: 8vh;
-    margin-top: 20px;
+    @include footer;
     background-color: var(--color-your-pink);
-    text-align: center;
   }
   
   footer p {

@@ -7,6 +7,10 @@
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
 :root {
   --color-white: #fff;
   --color-black: #000;
@@ -26,10 +30,6 @@ body {
   text-align: center;
   color: var(--color-white);
   margin-bottom: 0;
-}
-
-.jumbotron h1 {
-  font-size: 4rem;
 }
 
 .jumbotron p {

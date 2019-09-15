@@ -1,5 +1,6 @@
 @import './resets';
 @import './mixins';
+@import './variables';
   
   :root {
     --color-horses-neck: #5c3c10; /* anchor tag hover */
@@ -8,7 +9,6 @@
     --color-wafer: #dfd3c3; /* navbar, mineral card front, footer */
     --color-sandal: #a3816a; /* reverse mineral cards */
     --color-black: #000; /* text-color */
-    --align-center: center;
   }
   
   body {
@@ -45,7 +45,6 @@
   }
   
   .jumbotron h1 {
-    font-size: 4rem;
     color: var(--color-black);
     @include absoluteCenter;
   }
@@ -80,7 +79,7 @@
   
   .mineral-card h1 {
     @include absoluteCenter;
-    text-align: var(--align-center);
+    text-align: $align-center;
   }
   
   .mineral-card:hover {
@@ -102,7 +101,7 @@
     background: var(--color-moon-mist);
     transform: rotateY(180deg);
     padding: 1.5rem 1rem;
-    text-align: var(--align-center);
+    text-align: $align-center;
   }
   
   .reverse {

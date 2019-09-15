@@ -1,5 +1,6 @@
 @import './resets';
 @import './mixins';
+@import './variables';
   
   :root {
     --light-green: #a7d7c5;
@@ -67,7 +68,7 @@
   }
   
   .text-center {
-    text-align: center;
+    text-align: $align-center;
   }
   
   .png-img {
@@ -159,7 +160,7 @@
   
   .flaticon-div {
     margin: 0 auto;
-    text-align: center;
+    text-align: $align-center;
     font-size: 1.1rem;
   }
   
@@ -193,7 +194,6 @@
     }
     
     .water-soluble-column {
-      display: grid;
       grid-template-columns: repeat(1, 100%);
     }
   }

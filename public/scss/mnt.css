@@ -7,6 +7,10 @@
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
 :root {
   --color-dark-purple: #7c4789;
   --color-light-purple: #af7ac5;
@@ -49,7 +53,6 @@ a:hover {
 }
 
 .jumbotron h1 {
-  font-size: 4rem;
   color: var(--color-white);
   position: absolute;
   top: 50%;

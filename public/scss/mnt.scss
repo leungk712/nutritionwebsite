@@ -1,5 +1,6 @@
 @import './resets';
 @import './mixins';
+@import './variables';
   
   :root {
     --color-dark-purple: #7c4789;
@@ -43,7 +44,6 @@
   }
   
   .jumbotron h1 {
-    font-size: 4rem;
     color: var(--color-white);
     @include absoluteCenter;
   }
